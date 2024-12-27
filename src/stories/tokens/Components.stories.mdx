@@ -1,0 +1,34 @@
+import { Meta } from '@storybook/blocks';
+import { theme } from '../../tokens';
+
+<Meta title="Tokens/Component Tokens" />
+
+# Component-Specific Tokens
+
+## Button
+### Primary
+- Background: `${theme.components.button.primary.background}`
+- Hover Background: `${theme.components.button.primary.hoverBackground}`
+- Text Color: `${theme.components.button.primary.text}`
+
+### Secondary
+- Background: `${theme.components.button.secondary.background}`
+- Hover Background: `${theme.components.button.secondary.hoverBackground}`
+- Text Color: `${theme.components.button.secondary.text}`
+
+## Input
+- Border Color: `${theme.components.input.border}`
+- Focus Border: `${theme.components.input.focusBorder}`
+- Focus Ring: `${theme.components.input.focusRing}`
+- Text Color: `${theme.components.input.text}`
+
+### States
+#### Error
+- Border: `${theme.components.input.states.error.border}`
+- Ring: `${theme.components.input.states.error.ring}`
+- Text: `${theme.components.input.states.error.text}`
+
+#### Success
+- Border: `${theme.components.input.states.success.border}`
+- Ring: `${theme.components.input.states.success.ring}`
+- Text: `${theme.components.input.states.success.text}`

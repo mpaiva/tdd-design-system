@@ -1,0 +1,18 @@
+import { Meta, Typeset } from '@storybook/blocks';
+import { theme } from '../../tokens';
+
+<Meta title="Tokens/Typography" />
+
+# Typography
+
+## Font Families
+- Sans Serif: `${theme.typography.fontFamilies.sans}`
+- Monospace: `${theme.typography.fontFamilies.mono}`
+
+## Font Sizes
+
+<Typeset 
+  fontSizes={Object.values(theme.typography.fontSizes)}
+  sampleText="The quick brown fox jumps over the lazy dog"
+  fontFamily={theme.typography.fontFamilies.sans}
+/>

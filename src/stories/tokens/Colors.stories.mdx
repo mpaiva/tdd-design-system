@@ -1,0 +1,33 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import { theme } from '../../tokens';
+
+<Meta title="Tokens/Colors" />
+
+# Color Tokens
+
+Our color system is designed to create consistent, accessible, and beautiful interfaces.
+
+<ColorPalette>
+  <ColorItem 
+    title="Primary" 
+    colors={theme.colors.primary} 
+  />
+  <ColorItem 
+    title="Neutral" 
+    colors={theme.colors.neutral} 
+  />
+  <ColorItem 
+    title="Success" 
+    colors={{
+      500: theme.colors.success[500],
+      700: theme.colors.success[700],
+    }} 
+  />
+  <ColorItem 
+    title="Error" 
+    colors={{
+      500: theme.colors.error[500],
+      700: theme.colors.error[700],
+    }} 
+  />
+</ColorPalette>
